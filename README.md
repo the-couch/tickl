@@ -1,7 +1,7 @@
 # tickl
-Cute mouse-based animation util. **400 bytes gzipped.**
+🐭 Cute mouse-based animation util. **400 bytes gzipped.**
 
-<img src='https://raw.githubusercontent.com/the-couch/tickl/master/tickl.gif' style='max-width: 100%' />
+<img src='https://raw.githubusercontent.com/the-couch/tickl/master/tickl.gif' style='max-width: 100%; border: 1px solid #6a737d;' />
 
 ## Install
 ```
