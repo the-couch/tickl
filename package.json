@@ -1,0 +1,31 @@
+{
+  "name": "tickl",
+  "version": "0.0.1",
+  "description": "",
+  "source": "index.js",
+  "module": "dist/tickl.es.js",
+  "jsnext:main": "dist/tickl.es.js",
+  "main": "dist/tickl.js",
+  "umd:main": "dist/tickl.umd.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "microbundle build",
+    "watch": "microbundle watch",
+    "publish": "npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/estrattonbailey/tickl.git"
+  },
+  "author": "estrattonbailey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/estrattonbailey/tickl/issues"
+  },
+  "homepage": "https://github.com/estrattonbailey/tickl#readme",
+  "devDependencies": {
+    "microbundle": "^0.4.4"
+  }
+}
