@@ -20,17 +20,20 @@ export default function init(ctx = document.body, targets) {
       width
     } = ctx.getBoundingClientRect()
 
+    // are mouse coords inside ctx?
     if (cx > left && cx < right && cy > top && cy < bottom) {
       for (let i = 0; i < targets.length; i++) {
         const [ target, speed = 0 ] = [].concat(targets[i])
 
         const middleX = width / 2
         const middleY = (height / 2) + top
-        const x = (cx - middleX) * speed
-        const y = (cy - middleY) * speed
+
+        // mouse coords relative to ctx
+        const x = ((cx - left) - middleX) * speed
+        const y = ((cy - top) - middleY) * speed
 
         requestAnimationFrame(() => {
-          target.style.transform = `translateX(${x}px) translateY(${y}px)`
+          target.style.transform = `translate3d(${x}px, ${y}px, 0)`
         })
       }
     } else {
